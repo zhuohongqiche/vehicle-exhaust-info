@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>汽车尾气排放与治理 · 行业信息手册（2026）｜排放标准 · 年检检测 · I/M制度 · 治理技术</title>
+<meta name="description" content="以公开权威资料整理的汽车尾气行业信息手册：污染物构成与来源、国一至国六排放标准演进、在用车尾气检测方法与标准依据（GB 18285-2018 / GB 3847-2018）、I/M 制度（I站与M站）闭环流程、尾气超标常见原因与治理技术、行业趋势与车主常见问题。">
+<meta name="keywords" content="汽车尾气,尾气治理,M站,I/M制度,排放检验,国六,GB18285,GB3847,三元催化,积碳清洗,年检尾气,尾气超标">
+<meta property="og:title" content="汽车尾气排放与治理 · 行业信息手册（2026）">
+<meta property="og:description" content="排放标准 · 年检检测 · I/M制度 · 治理技术 —— 以公开权威资料整理的汽车尾气行业信息手册。">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://zhuohongqiche.github.io/vehicle-exhaust-info/">
+<style>
+:root{
+  --ink:#0b1f1c;
+  --ink-2:#27423d;
+  --muted:#5d6f6b;
+  --bg:#f4f7f6;
+  --card:#ffffff;
+  --line:#dfe8e5;
+  --brand:#0f766e;
+  --brand-2:#0d9488;
+  --brand-soft:#e6f4f1;
+  --deep:#051e1b;
+  --deep-2:#0a332d;
+  --amber:#b45309;
+  --amber-soft:#fdf3e3;
+  --red:#c2410c;
+  --red-soft:#fdeee7;
+  --sky:#075985;
+  --sky-soft:#e8f1f8;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(9,44,38,.07);
+  --shadow-lg:0 18px 46px rgba(9,44,38,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ---------- Hero ---------- */
+.hero{background:radial-gradient(1100px 500px at 85% -10%,#0e4d44 0%,transparent 55%),linear-gradient(160deg,var(--deep) 0%,var(--deep-2) 100%);color:#eaf6f3;padding:78px 0 64px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(120,200,185,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(120,200,185,.06) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#bfe8e0;font-size:13px;padding:5px 14px;border-radius:999px;letter-spacing:.5px}
+.badge b{color:#fff}
+h1{font-size:clamp(28px,4.6vw,46px);line-height:1.22;margin:22px 0 16px;font-weight:800;letter-spacing:.5px}
+h1 .hl{color:#34d399}
+.hero p.lead{font-size:clamp(15px,1.6vw,18px);color:#bfd9d2;max-width:820px}
+.hero .meta{margin-top:26px;font-size:13.5px;color:#8fb6ad;display:flex;flex-wrap:wrap;gap:8px 20px}
+.hero .meta span{display:inline-flex;align-items:center;gap:6px}
+.hero .meta i{font-style:normal;color:#34d399}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.stat{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:16px 18px;backdrop-filter:blur(4px)}
+.stat .num{font-size:clamp(20px,2.4vw,30px);font-weight:800;color:#fff;line-height:1.2}
+.stat .num em{font-style:normal;color:#5eead4;font-size:.62em;font-weight:600;margin-left:2px}
+.stat .lab{font-size:12.5px;color:#9cc4ba;margin-top:5px;line-height:1.5}
+.stat .src{font-size:11px;color:#6f9a90;margin-top:3px}
+
+/* ---------- Nav ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:0;padding-bottom:0}
+.nav .wrap::-webkit-scrollbar{display:none}
+.nav .logo{font-weight:800;color:var(--brand);white-space:nowrap;margin-right:14px;font-size:15px}
+.nav a{color:var(--ink-2);font-size:14px;padding:13px 12px;white-space:nowrap;border-bottom:2px solid transparent;display:inline-block}
+.nav a:hover{text-decoration:none;color:var(--brand)}
+.nav a.on{color:var(--brand);border-bottom-color:var(--brand);font-weight:600}
+
+/* ---------- Sections ---------- */
+section{padding:64px 0 8px}
+.sec-head{margin-bottom:34px}
+.sec-head .kicker{display:inline-block;font-size:13px;font-weight:700;color:var(--brand);letter-spacing:2px;margin-bottom:8px}
+.sec-head h2{font-size:clamp(22px,3vw,32px);font-weight:800;line-height:1.3}
+.sec-head p{color:var(--muted);margin-top:10px;max-width:860px;font-size:15px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+
+/* 污染物卡片 */
+.pll{height:14px;border-radius:4px;margin:6px 0 4px}
+.card-b{display:block;color:inherit}
+.card-b:hover{text-decoration:none;transform:translateY(-3px)}
+.card-b{transition:transform .2s ease,box-shadow .2s ease;padding:22px}
+.card-b:hover{box-shadow:var(--shadow-lg)}
+.card-b .t{font-weight:800;font-size:17px}
+.card-b .en{font-size:12px;color:var(--muted);letter-spacing:1px}
+.card-b p{font-size:13.5px;color:var(--muted);margin-top:8px}
+.tag{font-size:11.5px;padding:2px 9px;border-radius:999px;font-weight:600}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:30px}
+.timeline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--brand-2),var(--line))}
+.tl-item{position:relative;padding:0 0 26px 8px}
+.tl-item::before{content:"";position:absolute;left:-25px;top:7px;width:13px;height:13px;border-radius:50%;background:#fff;border:3.5px solid var(--brand-2);box-shadow:0 0 0 4px var(--brand-soft)}
+.tl-item:last-child::before{border-color:var(--amber);box-shadow:0 0 0 4px var(--amber-soft)}
+.tl-item .yr{font-weight:800;color:var(--brand);font-size:16px}
+.tl-item .yr small{color:var(--muted);font-weight:500;margin-left:8px}
+.tl-item p{color:var(--muted);font-size:14px;margin-top:3px;max-width:900px}
+.tl-item p b{color:var(--ink-2)}
+
+/* I/M 流程 */
+.flow{background:linear-gradient(165deg,#fff 0%,#eef8f5 100%);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow)}
+.flow-row{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;margin:14px 0 4px}
+.fnode{flex:1;min-width:150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 14px;position:relative;text-align:center}
+.fnode b{display:block;font-size:15px}
+.fnode .s{font-size:12px;color:var(--muted)}
+.fnode .chip{display:inline-block;font-size:10.5px;background:var(--brand-soft);color:var(--brand);border-radius:999px;padding:1px 8px;margin-bottom:5px;font-weight:700}
+.fnode.bad .chip{background:var(--red-soft);color:var(--red)}
+.fnode.bad{border-color:#f2cdbc}
+.fnode.good .chip{background:#e8f7ef;color:#15803d}
+.fnode.good{border-color:#c4e8d4}
+.farrow{display:flex;align-items:center;color:var(--brand);font-weight:800;padding:0 6px;font-size:20px}
+.flow-note{margin-top:12px;font-size:13px;color:var(--muted);background:rgba(13,148,136,.06);border-radius:10px;padding:10px 14px;border-left:3px solid var(--brand-2)}
+
+/* 治理对照表 */
+table{width:100%;border-collapse:collapse;font-size:14px;background:#fff;border-radius:12px;overflow:hidden}
+th,td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:#0d332e;color:#e8f7f3;font-weight:600;font-size:13.5px}
+tr:last-child td{border-bottom:none}
+td b{color:var(--ink-2)}
+tr:nth-child(even) td{background:#f9fcfa}
+
+/* FAQ */
+.faq{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:12px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:16px 46px 16px 18px;font-weight:700;font-size:15px;position:relative;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--brand);font-weight:400}
+.faq[open] summary::after{content:"−";color:var(--muted)}
+.faq .a{padding:0 18px 16px;color:var(--muted);font-size:14px}
+.faq .a b{color:var(--ink-2)}
+
+/* 趋势 */
+.trend{padding:22px}
+.trend .ico{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:12px}
+.trend h3{font-size:16.5px;margin-bottom:6px}
+.trend p{font-size:13.5px;color:var(--muted)}
+
+/* 参考 */
+.refs{font-size:13px;color:var(--muted)}
+.refs li{margin:6px 0 6px 18px}
+footer{background:var(--deep);color:#a9c6bf;margin-top:70px;padding:44px 0 40px;font-size:13.5px}
+footer .org{color:#fff;font-weight:700}
+footer .disc{margin-top:10px;font-size:12.5px;color:#6f9a90;border-top:1px solid rgba(255,255,255,.1);padding-top:14px;margin-top:18px}
+footer a{color:#5eead4}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* mini chart: fuel split */
+.bar-row{display:flex;align-items:center;gap:10px;margin:7px 0}
+.bar-row .nm{width:86px;flex:none;font-size:12.5px;color:var(--ink-2);font-weight:600}
+.bar-row .bar{flex:1;height:18px;background:#e9f0ee;border-radius:5px;overflow:hidden;display:flex}
+.bar-row .bar i{display:block;height:100%}
+.bar-row .val{width:120px;flex:none;font-size:12px;color:var(--muted);text-align:right}
+.legend{display:flex;gap:16px;font-size:12.5px;color:var(--muted);margin-top:6px;flex-wrap:wrap}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px}
+
+@media(max-width:900px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .g3,.g4,.g2{grid-template-columns:1fr}
+  section{padding:44px 0 6px}
+  .farrow{transform:rotate(90deg);justify-content:center;padding:2px 0}
+  .fnode{min-width:100%}
+  .hero{padding:56px 0 46px}
+}
+@media(max-width:560px){
+  .stats{grid-template-columns:1fr 1fr;gap:10px}
+  .stat{padding:12px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">📋 公开资料整理 · 持续更新 <b>2026-09</b></span>
+    <h1>汽车尾气排放与治理<br><span class="hl">行业信息手册</span></h1>
+    <p class="lead">一份面向车主、汽修同行与从业者的行业速览：从“尾气里到底有什么”，到排放标准怎么一步步加严、年检尾气怎么测、超标了去哪修、行业往哪走——数据均标注来源，以官方最新发布为准。</p>
+    <div class="meta">
+      <span><i>◆</i>污染物构成与来源</span>
+      <span><i>◆</i>国一 → 国六b 标准演进</span>
+      <span><i>◆</i>在用车检测方法与依据</span>
+      <span><i>◆</i>I/M 制度与 M 站闭环</span>
+      <span><i>◆</i>超标原因与治理技术</span>
+      <span><i>◆</i>行业趋势与 FAQ</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num">1858.2<em>万吨</em></div><div class="lab">2024 年全国移动源污染物排放总量</div><div class="src">生态环境部年报（2025）</div></div>
+      <div class="stat"><div class="num">1285.6<em>万吨</em></div><div class="lab">其中机动车排放总量</div><div class="src">同上</div></div>
+      <div class="stat"><div class="num">97.8<em>%</em></div><div class="lab">汽车 NOx 排放占机动车排放比重</div><div class="src">同上</div></div>
+      <div class="stat"><div class="num">99<em>%+</em></div><div class="lab">柴油车占汽车 PM（颗粒物）排放比重</div><div class="src">同上</div></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <span class="logo">尾气行业手册</span>
+    <a href="#s1" class="on">污染与来源</a>
+    <a href="#s2">排放标准</a>
+    <a href="#s3">年检检测</a>
+    <a href="#s4">I/M 制度</a>
+    <a href="#s5">超标治理</a>
+    <a href="#s6">行业趋势</a>
+    <a href="#s7">常见问题</a>
+    <a href="#ref">参考来源</a>
+  </div>
+</nav>
+
+<main>
+<!-- ============ 1 污染与来源 ============ -->
+<section id="s1">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">PART 01 · 现状与来源</span>
+      <h2>尾气是移动源污染的主战场</h2>
+      <p>生态环境部《中国移动源环境管理年报（2025年）》显示：2024 年全国移动源污染物排放总量约 <b>1858.2 万吨</b>，其中机动车排放约 <b>1285.6 万吨</b>。机动车已是大气污染排放的重要来源，而汽车又是其中的绝对主力——四项主要污染物排放量占机动车排放的九成上下。</p>
+    </div>
+
+    <div class="grid g4 reveal">
+      <a class="card card-b" href="#s5">
+        <span class="tag" style="background:var(--sky-soft);color:var(--sky)">汽油车主源</span>
+        <div class="t" style="margin-top:8px">CO 一氧化碳</div>
+        <div class="en">Carbon Monoxide</div>
+        <div class="pll" style="width:86%;background:linear-gradient(90deg,#38bdf8,#0ea5e9)"></div>
+        <p>2024 机动车排放 682.8 万吨。汽油车贡献占汽车排放的 <b>85.6%</b>。燃烧不充分的产物，浓度高时使人头晕缺氧，也是油耗偏高的直接信号。</p>
+      </a>
+      <a class="card card-b" href="#s5">
+        <span class="tag" style="background:var(--sky-soft);color:var(--sky)">汽油车主源</span>
+        <div class="t" style="margin-top:8px">HC 碳氢化合物</div>
+        <div class="en">Hydrocarbons</div>
+        <div class="pll" style="width:84.5%;background:linear-gradient(90deg,#38bdf8,#0ea5e9)"></div>
+        <p>2024 机动车排放 184.0 万吨。汽油车占汽车排放 <b>84.5%</b>。多为未燃尽的燃油，是光化学烟雾的前体物，含苯等多环芳烃具健康风险。</p>
+      </a>
+      <a class="card card-b" href="#s5">
+        <span class="tag" style="background:var(--red-soft);color:var(--red)">柴油车主源</span>
+        <div class="t" style="margin-top:8px">NOx 氮氧化物</div>
+        <div class="en">Nitrogen Oxides</div>
+        <div class="pll" style="width:87%;background:linear-gradient(90deg,#fb923c,#ea580c)"></div>
+        <p>2024 机动车排放 415.2 万吨（总量最高）。柴油车占汽车排放 <b>87.1%</b>。高温燃烧产物，参与生成臭氧、PM2.5 与酸雨。</p>
+      </a>
+      <a class="card card-b" href="#s5">
+        <span class="tag" style="background:var(--red-soft);color:var(--red)">柴油车主源</span>
+        <div class="t" style="margin-top:8px">PM 颗粒物</div>
+        <div class="en">Particulate Matter</div>
+        <div class="pll" style="width:99%;background:linear-gradient(90deg,#fb923c,#ea580c)"></div>
+        <p>2024 机动车排放 3.6 万吨。柴油车占汽车排放 <b>99% 以上</b>，柴油货车是颗粒物与 NOx 治理的重中之重。</p>
+      </a>
+    </div>
+
+    <div class="card reveal" style="margin-top:18px;padding:22px">
+      <div style="font-weight:800;margin-bottom:6px">燃料与污染物对应关系（数据：生态环境部《中国移动源环境管理年报（2025年）》）</div>
+      <div class="bar-row"><div class="nm">CO</div><div class="bar"><i style="width:85.6%;background:#0ea5e9"></i><i style="width:14.4%;background:#ea580c"></i></div><div class="val">汽油车 85.6% ｜ 柴油车约 14%</div></div>
+      <div class="bar-row"><div class="nm">HC</div><div class="bar"><i style="width:84.5%;background:#0ea5e9"></i><i style="width:15.5%;background:#ea580c"></i></div><div class="val">汽油车 84.5%</div></div>
+      <div class="bar-row"><div class="nm">NOx</div><div class="bar"><i style="width:87.1%;background:#ea580c"></i><i style="width:12.9%;background:#0ea5e9"></i></div><div class="val">柴油车 87.1%（占汽车）</div></div>
+      <div class="bar-row"><div class="nm">PM</div><div class="bar"><i style="width:99%;background:#ea580c"></i><i style="width:1%;background:#0ea5e9"></i></div><div class="val">柴油车 99% 以上（占汽车）</div></div>
+      <div class="legend"><span><i style="background:#0ea5e9"></i>汽油车（CO、HC 高发）</span><span><i style="background:#ea580c"></i>柴油车（NOx、颗粒物高发）</span></div>
+    </div>
+
+    <div class="card reveal" style="margin-top:18px;padding:22px">
+      <div style="font-weight:800">为什么盯住“在用燃油车”不放？</div>
+      <p style="font-size:14.5px;color:var(--muted);margin-top:8px">一方面，全国汽车保有量已超 <b>3.5 亿辆</b>，其中绝大多数仍是燃油车，存量基数巨大；另一方面，新生产车受“国六”等标准约束、排放控制水平高，而<b>在用车随着车龄增长，三元催化、氧传感器、燃烧系统等逐渐劣化</b>，若缺乏维护就会成为排放的主要来源。因此行业监管的重心，落在“在用车的定期检验 + 超标维修闭环（I/M 制度）”上。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 排放标准 ============ -->
+<section id="s2">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">PART 02 · 法规演进</span>
+      <h2>排放标准：二十年从“国一”走到“国六b”</h2>
+      <p>我国机动车排放标准体系始于 1983 年第一批汽车排放标准，此后按“国一→国六”逐级加严。按生态环境部口径：2000 年实施国一、2004 年国二、2008 年国三、2011 年国四、2017 年国五、2020 年国六；2023 年 7 月 1 日起，轻型汽车全面实施<b>国六b</b>，被称为“史上最严”阶段。国七标准已处于预研推进之中。</p>
+    </div>
+
+    <div class="grid g2 reveal" style="margin-bottom:18px">
+      <div class="timeline card" style="padding:24px 24px 8px 40px">
+        <div class="tl-item"><div class="yr">1983<small>起步</small></div><p>颁布第一批汽车排放标准（汽油车怠速法、柴油车自由加速烟度等 6 项），开启汽车污染防治。</p></div>
+        <div class="tl-item"><div class="yr">2000 / 2004<small>国一 → 国二</small></div><p>正式实施汽车国一阶段排放标准；进入电喷技术普及时代，排放控制水平逐步对标国际 90 年代水平。</p></div>
+        <div class="tl-item"><div class="yr">2008 / 2011<small>国三 → 国四</small></div><p>标准持续加严，机内净化（多点喷射、增压、可变气门、EGR）与机外净化（三元催化）技术快速普及。</p></div>
+        <div class="tl-item"><div class="yr">2017 / 2020<small>国五 → 国六</small></div><p>国五实施后仅三年即进入国六。2020 年轻型车国六a 实施，同年发布国六b 要求。</p></div>
+        <div class="tl-item"><div class="yr">2023.7<small>国六b 全面实施</small></div><p>轻型汽车全面实施国六b：污染物限值较国五大幅收紧，新增 RDE（实际行驶排放）要求，汽油车普遍加装 GPF 颗粒捕集器，OBD 与排放质保要求全面强化。</p></div>
+        <div class="tl-item"><div class="yr">未来<small>国七预研</small></div><p>生态环境部门推进下一阶段标准预研；欧盟欧七亦在收紧颗粒物数量（PN）等限值，全球排放法规整体趋严。</p></div>
+      </div>
+
+      <div class="card" style="padding:24px">
+        <div style="font-weight:800;margin-bottom:4px">国六b 与“国五时代”的本质区别</div>
+        <p style="font-size:14px;color:var(--muted)">不只是限值更严，更是<b>监管逻辑</b>的变化：从“实验室工况达标”转向“实际行驶也要达标”。RDE 测试把车开上真实道路用便携设备监测排放，堵住了过去“实验室作弊、上路超标”的口子；OBD 远程监控使重型柴油车排放数据实时上传。对在用车的直接影响是——年检尾气环节<b>数据联网、OBD 必查</b>，人工干预空间被极大压缩。</p>
+        <div style="margin-top:16px;font-size:13.5px;color:var(--muted);background:var(--brand-soft);border-radius:10px;padding:12px 14px">
+        💡 <b>行业解读：</b>排放法规的每一次加严，都会放大“存量老车 + 疏于养护”的尾气超标问题，这正是排放检验与治理（M站）业态长期存在的政策基础。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 年检检测 ============ -->
+<section id="s3">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">PART 03 · 在用车检验</span>
+      <h2>年检尾气怎么测？方法与依据</h2>
+      <p>在用车排放检验执行两份强制性国家标准：汽油车按 <b>GB 18285-2018</b>《汽油车污染物排放限值及测量方法（双怠速法及简易工况法）》，柴油车按 <b>GB 3847-2018</b>《柴油车污染物排放限值及测量方法（自由加速法及加载减速法）》。是否合格，由检测设备实测数据与国家规定限值比对得出。</p>
+    </div>
+
+    <div class="grid g3 reveal">
+      <div class="card card-b"><span class="tag" style="background:var(--sky-soft);color:var(--sky)">汽油车</span>
+        <div class="t" style="margin-top:10px">双怠速法</div>
+        <p>在高怠速（约额定转速 50%）与低怠速两个工况下，用气体分析仪测量 CO、HC、CO₂、O₂、NOx 浓度。操作快、成本低，是汽油车最常见的检测方式，适合日常快检与年检。</p>
+      </div>
+      <div class="card card-b"><span class="tag" style="background:var(--sky-soft);color:var(--sky)">汽油车</span>
+        <div class="t" style="margin-top:10px">简易工况法（加载检测）</div>
+        <p>车辆开上<b>底盘测功机</b>，按设定车速曲线带负荷行驶，实时测量污染物排放总量，更接近真实路况，结果更严苛。北京、上海、广州等大城市普遍采用（简易瞬态工况），对三元催化器与燃烧系统的考验更大。</p>
+      </div>
+      <div class="card card-b"><span class="tag" style="background:var(--red-soft);color:var(--red)">柴油车</span>
+        <div class="t" style="margin-top:10px">自由加速法（烟度）</div>
+        <p>柴油车以急加速工况用<b>不透光烟度计</b>测量排气烟度，判定颗粒物排放。重型柴油货车另有加载减速法（工况法），且按要求加装 OBD 远程在线监控终端，排放数据实时上传监管平台。</p>
+      </div>
+    </div>
+
+    <div class="card reveal" style="margin-top:18px;padding:22px">
+      <div style="font-weight:800">🚨 别忘了 OBD：2020 年后上线的“电子考官”</div>
+      <p style="font-size:14.5px;color:var(--muted);margin-top:6px">排放检验须同步开展 <b>OBD（车载诊断系统）检查</b>：检测设备直接读取车辆 ECU 数据，存在排放相关故障码（氧传感器、三元催化效率低、失火等）时，即便尾气数值在限值内也可能被判不合格。检测数据实时联网上传，一次不合格即与该车 VIN 绑定——<b>“换站重测”“黄牛代过”的空间已基本消失</b>。按现行政策，2011 年 7 月 1 日前出厂的部分车型可按规定豁免 OBD 检查，具体以当时有效政策为准。</p>
+      <div style="margin-top:12px;font-size:13.5px;color:var(--muted);background:var(--sky-soft);border-radius:10px;padding:12px 14px">📌 关于“超标即维修”：按《大气污染防治法》第六十条，在用机动车排放超标的，应当进行维修；经维修或采用污染控制技术后仍不符合在用机动车排放标准的，应当<b>强制报废</b>。超标不是“塞点钱就能过去”的事，而是有明确法律后果的行政链条。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 I/M 制度 ============ -->
+<section id="s4">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">PART 04 · 闭环管理</span>
+      <h2>I/M 制度：检验不合格，必须进 M 站修</h2>
+      <p>依据《大气污染防治法》，生态环境部、交通运输部、市场监管总局于 2020 年联合印发《关于建立实施汽车排放检验与维护制度的通知》（环大气〔2020〕31 号），全面推行 <b>I/M 制度</b>——I 站（排放检验机构）负责“检验”，M 站（排放性能维护站，即具备治理能力的维修企业）负责“维修”，两者数据联网、闭环管理，杜绝“检测放水”与“修而不治”。</p>
+    </div>
+
+    <div class="flow reveal">
+      <div style="font-weight:800;font-size:15.5px">标准闭环流程</div>
+      <div class="flow-row">
+        <div class="fnode"><span class="chip">I站</span><b>排放检验</b><span class="s">上线检测，数据实时上传</span></div>
+        <div class="farrow">→</div>
+        <div class="fnode bad"><span class="chip">不合格</span><b>出具《告知书》</b><span class="s">检验报告＋超标排放汽车维护修理告知书，超标幅度 ≥10% 进入闭环管理</span></div>
+        <div class="farrow">→</div>
+        <div class="fnode"><span class="chip">M站（自主选择）</span><b>诊断 → 维修 → 治理</b><span class="s">按检测数据分析超标原因，规范维修并上传维修记录，出具《维修竣工出厂合格证》/结算清单</span></div>
+        <div class="farrow">→</div>
+        <div class="fnode good"><span class="chip">I站复检</span><b>凭维修凭证复检</b><span class="s">系统核查维修记录后复检；合格发报告；仍不合格继续维修直至达标</span></div>
+      </div>
+      <div class="flow-note">📎 车主<b>自主选择任一家备案 M 站</b>，任何机构不得强制指定。2025 年底过渡期后，各地通过“机动车排污监控平台 / 维修电子健康档案系统”数据互通核验维修记录，未上传维修数据的车辆不予复检。</div>
+    </div>
+
+    <div class="grid g2 reveal" style="margin-top:18px">
+      <div class="card" style="padding:22px">
+        <div style="font-weight:800;color:var(--brand)">I 站 · 排放检验机构（检测站）</div>
+        <ul style="font-size:14px;color:var(--muted);margin:10px 0 0 18px">
+          <li>依法取得资质认定（CMA），检测设备经法定计量检定且每年强制检定</li>
+          <li>与生态环境部门联网，检测视频全覆盖，数据实时上传</li>
+          <li>检测不合格须如实出具《超标排放汽车维护修理告知书》</li>
+          <li>不得以任何方式经营或参与经营尾气维修业务（避免“既当裁判又当运动员”）</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:22px">
+        <div style="font-weight:800;color:var(--brand)">M 站 · 排放性能维护（维修）站</div>
+        <ul style="font-size:14px;color:var(--muted);margin:10px 0 0 18px">
+          <li>须具备一类 / 二类机动车维修资质（或从事发动机维修的三类资质），经交通运输部门备案</li>
+          <li>依据超标检验报告逐项分析原因，规范开展维修治理，如实记录并上传维修数据（含配件溯源）</li>
+          <li>维修完成出具《维修竣工出厂合格证》或结算清单，作为复检凭证</li>
+          <li>对维修质量负责，执行质量保证期制度，保证期内因维修质量问题可无偿返修</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid g4 reveal" style="margin-top:16px">
+      <div class="card card-b"><div style="font-weight:800;font-size:14.5px">生态环境部门</div><p style="margin-top:4px">监管 I 站检测行为与数据真实性，查处检测造假、临时更换污染控制装置等弄虚作假行为。</p></div>
+      <div class="card card-b"><div style="font-weight:800;font-size:14.5px">交通运输部门</div><p style="margin-top:4px">M 站资质审核、维修过程与质量监管，维修电子健康档案管理，公布 M 站名录。</p></div>
+      <div class="card card-b"><div style="font-weight:800;font-size:14.5px">市场监管部门</div><p style="margin-top:4px">检验机构资质认定与设备检定监督，查处假冒伪劣配件与虚假宣传。</p></div>
+      <div class="card card-b"><div style="font-weight:800;font-size:14.5px">公安交管部门</div><p style="margin-top:4px">未达标车辆不予受理注册/转移登记；配合路面执法与超标车辆闭环管理。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5 超标治理 ============ -->
+<section id="s5">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">PART 05 · 诊断与治理</span>
+      <h2>尾气超标，先看数据再动手</h2>
+      <p>行业里常说的“对症治理”，前提是先看懂检验报告超标的是哪一项——CO/HC 高多半是<b>燃烧问题</b>，NOx 高多半在<b>三元催化与燃烧温度控制</b>，柴油车冒黑烟则指向<b>供油与颗粒物捕集</b>。下表是通行排查路径，实际以 M 站诊断为准：</p>
+    </div>
+
+    <div class="reveal" style="overflow-x:auto">
+    <table>
+      <thead><tr><th style="width:18%">超标表现</th><th style="width:38%">常见原因</th><th>常规治理手段</th></tr></thead>
+      <tbody>
+        <tr><td><b>CO / HC 偏高</b>（汽油车）</td><td>燃烧不充分：<b>积碳</b>（节气门、进气道、燃烧室）、喷油嘴雾化不良、火花塞老化、氧传感器失准、空气滤芯过脏、劣质燃油</td><td>积碳清洗 → 检查/更换火花塞、氧传感器 → 更换空滤 → 加注正规油品并热车充分行驶后复检</td></tr>
+        <tr><td><b>NOx 偏高</b>（汽油车）</td><td>三元催化器中毒/高温老化失效、EGR 废气再循环阀故障、燃烧温度异常</td><td>三元催化清洗（轻度）或更换（严重）→ 检修 EGR → 排查燃油与点火系统</td></tr>
+        <tr><td><b>烟度 / 颗粒物超标</b>（柴油车）</td><td>喷油嘴磨损或压力异常、供油不正时、<b>DPF 颗粒捕集器</b>堵塞、进气不足</td><td>喷油系统检修 → DPF 再生/清洗或更换 → 检查空滤与涡轮增压系统</td></tr>
+        <tr><td><b>OBD 故障码</b>（各类车型）</td><td>排放相关历史故障码：氧传感器响应慢、三元催化效率低、失火等</td><td>诊断仪读码定位 → 针对性维修 → 消除故障码后行驶一段里程（让系统完成就绪自检）再上线</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="grid g2 reveal" style="margin-top:18px">
+      <div class="card" style="padding:22px">
+        <div style="font-weight:800">🔧 关键部件一分钟看懂</div>
+        <p style="font-size:14px;color:var(--muted);margin-top:8px">
+        <b>三元催化器</b>：把尾气中的 CO、HC 氧化成 CO₂ 与 H₂O，把 NOx 还原成 N₂，是汽油车达标的“心脏”，需在 300℃ 以上工作温度才高效；积碳堵塞可逆、可清洗恢复活性，中毒失效或破损需更换。<br><br>
+        <b>EGR（废气再循环）</b>：把部分废气引回气缸降低燃烧温度，从源头抑制 NOx 生成。<br><br>
+        <b>DPF / GPF（颗粒捕集器）</b>：柴油车（DPF）与国六汽油车（GPF）物理过滤颗粒物，需定期再生（高温烧掉积存的碳）。</p>
+      </div>
+      <div class="card" style="padding:22px">
+        <div style="font-weight:800">⚠️ 三条治理红线（务必知晓）</div>
+        <p style="font-size:14px;color:var(--muted);margin-top:8px">
+        <b>1. 禁止弄虚作假。</b>《大气污染防治法》第五十五条明确禁止以<b>临时更换污染控制装置</b>等弄虚作假方式通过排放检验，违者将被依法查处、数据记入系统。<br><br>
+        <b>2. 维修记录必须真实可查。</b>M 站维修须如实上传数据、配件可溯源；伪造维修记录、签发虚假合格证会被取消资格并处罚。<br><br>
+        <b>3. “包过”不可信。</b>合规路径是“检测 → 诊断 → 维修 → 复检”的真闭环。任何承诺“一定过、包过”的说法，既违背制度设计，也不符合维修质量责任规定——能承诺的只有<b>规范检测、如实数据、按标准维修</b>。</p>
+      </div>
+    </div>
+
+    <div class="card reveal" style="margin-top:18px;padding:22px">
+      <div style="font-weight:800">🚗 车主年检前能自己做的 4 件事（防白跑）</div>
+      <div class="grid g4" style="margin-top:12px;grid-template-columns:repeat(2,1fr);gap:10px">
+        <div style="font-size:14px;background:#f9fcfa;border-radius:10px;padding:10px 14px">① <b>热车“激活”三元催化器</b>：检测前跑 15–20 分钟高速或快速路，让三元催化达到工作温度（冷车上线数据会明显偏高）。</div>
+        <div style="font-size:14px;background:#f9fcfa;border-radius:10px;padding:10px 14px">② <b>用正规油品</b>：提前一箱换用正规加油站汽油，劣质油里的硫、磷是三元催化的“慢性毒药”。</div>
+        <div style="font-size:14px;background:#f9fcfa;border-radius:10px;padding:10px 14px">③ <b>先清故障码再上路行驶</b>：年检前 3–7 天消除排放相关故障码，并行驶 20 公里以上让系统完成“就绪”自检。</div>
+        <div style="font-size:14px;background:#f9fcfa;border-radius:10px;padding:10px 14px">④ <b>提前做一次预检</b>：年检前到检测站或有资质的维修点做尾气预检，用数据代替猜测，避免正式上线“一票否决”后被动维修。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6 行业趋势 ============ -->
+<section id="s6">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">PART 06 · 展望</span>
+      <h2>行业往哪走：存量刚需 + 数字化监管</h2>
+    </div>
+    <div class="grid g4 reveal">
+      <div class="card trend"><div class="ico" style="background:var(--brand-soft)">🚗</div><h3>存量燃油车仍是基本盘</h3><p>全国汽车保有量超 3.5 亿辆、以燃油车为主。新能源渗透率再高，老车存量与商用车（柴油货车）的检测、治理、后处理维护需求都是长期刚需。</p></div>
+      <div class="card trend"><div class="ico" style="background:var(--amber-soft)">📜</div><h3>标准持续加严</h3><p>国六b 已全面落地，国七进入预研；老旧高排放车辆在环保压力下加速淘汰更新，置换带动的“检测—维修—报废回收”链条同步扩容。</p></div>
+      <div class="card trend"><div class="ico" style="background:var(--sky-soft)">🛰️</div><h3>监管全面数字化</h3><p>OBD 联网、遥感监测、“天地车人”一体化平台、重型柴油车远程在线监控——数据透明化让“以检代修”“作弊过关”失去空间，倒逼行业回归真实维修能力。</p></div>
+      <div class="card trend"><div class="ico" style="background:var(--red-soft)">🔋</div><h3>电动化改写版图</h3><p>新能源车免于尾气检测；中长期内燃油车后处理需求增速放缓，但“以养代修、预防性治理”（定期清积碳、护三元、DPF 再生）成为维修业态新增长点。</p></div>
+    </div>
+    <div class="card reveal" style="margin-top:16px;padding:20px 22px">
+      <p style="font-size:14.5px;color:var(--muted)">💡 <b>一句话总结：</b>行业正从“靠信息差与人工干预牟利”走向“靠<b>检测数据能力、维修技术真实度与合规口碑</b>竞争”。对车主而言，靠谱的尾气治理 = 看懂报告 + 对症维修 + 合规闭环，三者缺一不可。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7 FAQ ============ -->
+<section id="s7">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">PART 07 · 常见问题</span>
+      <h2>车主高频问题 FAQ</h2>
+    </div>
+    <div class="reveal">
+      <details class="faq"><summary>1. 尾气检测主要测什么？哪些车要测？</summary><div class="a">按现行国家标准的在用车检验项目，汽油车主要测 <b>CO（一氧化碳）、HC（碳氢化合物）</b>（大城市加载工况还测 NOx），并做 <b>OBD 检查</b>；柴油车主要测<b>排气烟度</b>（颗粒物），重型车另有加载减速工况。适用对象是<b>在用的燃油（汽油/柴油）车</b>；纯电动等新能源车按规定免于尾气排放检测。</div></details>
+      <details class="faq"><summary>2. 年检尾气不合格会怎样？</summary><div class="a">I 站会出具检验报告和《超标排放汽车维护修理告知书》。超标幅度达到规定标准（一般按 10% 划分，各地口径略有差异）的，须到具备资质的 <b>M 站（排放性能维护站）</b>维修治理，凭维修记录回原 I 站复检。注意：检测数据已与该车 VIN 绑定并联网上传，<b>换检测站无法规避</b>。</div></details>
+      <details class="faq"><summary>3. I 站和 M 站到底什么区别？</summary><div class="a">I 站 = 机动车排放<b>检验</b>机构（检测站），负责上线检测、出具报告，法律上不得经营维修业务；M 站 = 经交通部门备案的<b>维修治理</b>企业（须一类/二类维修资质或发动机维修三类资质），负责把超标车修到达标。I/M 制度就是让“检验”与“维修”相互独立又数据闭环，防止既检又修、放水过关。</div></details>
+      <details class="faq"><summary>4. 必须去“指定的 M 站”修吗？</summary><div class="a"><b>不必。</b>车主可自主选择任一家备案 M 站，检测站不得强制指定（强制消费可向主管部门投诉）。各地交通运输部门会在官网/公众号公布 M 站名录（含资质、主修车型、地址），建议优先选择具备<b>尾气分析仪等检测设备、能出具规范维修记录</b>的站点。</div></details>
+      <details class="faq"><summary>5. 为什么我的车尾气会超标？最常见的原因？</summary><div class="a">综合行业经验，高频原因集中在三块：① <b>积碳与燃烧不充分</b>（长期短途、频繁启停，CO/HC 升高）；② <b>三元催化器劣化</b>（中毒、高温烧结或长期低温“不干活”，NOx 升高）；③ <b>氧传感器/火花塞等老化</b>导致空燃比失控。老车或长期小油站加油的车辆概率更高——先看报告哪项超标，再对症排查，多数通过清洗养护即可解决，不必盲目换件。</div></details>
+      <details class="faq"><summary>6. 三元催化器要多久换一次？</summary><div class="a">没有统一“里程寿命”，取决于油品、工况与养护。一般<b>轻度积碳堵塞可清洗恢复</b>（价格远低于更换）；出现中毒失效、陶瓷载体破损、转化效率持续过低时才需更换。判断依据是数据：OBD 报“催化器效率低”、后氧传感器信号异常、NOx 复检不过，都应先检测后决策，能修不换、不盲目换件。</div></details>
+      <details class="faq"><summary>7. 年检前自己能做什么？</summary><div class="a">四件事：<b>① 热车</b>——检前跑 15–20 分钟让三元催化达到工作温度；<b>② 正规油品</b>——劣质油伤三元催化；<b>③ 处理故障码</b>——检前数日清码并行驶完成系统就绪自检；<b>④ 预检</b>——提前测一次尾气，用数据说话，避免上线不合格后时间被动。</div></details>
+      <details class="faq"><summary>8. 网上“年检包过/尾气过关神器”能信吗？</summary><div class="a"><b>不建议。</b>其一，检测数据实时联网、全程视频监控、一次不合格即绑定 VIN，人为干预空间几乎为零；其二，《大气污染防治法》第五十五条明确禁止以临时更换污染控制装置等弄虚作假方式通过检验，违规面临查处；其三，所谓“神器”多为短期掩盖，复检极易再次失败，属于花钱买风险。合规路径只有：真实维修 + 复检达标。</div></details>
+      <details class="faq"><summary>9. 柴油车冒黑烟是哪里的问题？</summary><div class="a">黑烟 = 颗粒物（碳烟）排放超标，常见原因：<b>喷油嘴磨损/雾化差、供油提前角不正、空气滤芯堵塞、进气不足，以及 DPF 颗粒捕集器堵塞或再生失败</b>。治理思路是逐项检测排查：先读故障码与烟度数据，再做喷油系统检修、DPF 再生/清洗，避免直接大拆大换。</div></details>
+      <details class="faq"><summary>10. 老车尾气修不好，继续修还是报废？</summary><div class="a">《大气污染防治法》第六十条规定：在用机动车排放超标的应当维修；经维修或采用污染控制技术后<b>仍不符合在用机动车排放标准的，应当强制报废</b>。判断标准是“维修后是否达标”，而非感觉。建议老车先做完整诊断，若属可逆故障（积碳、轻度催化失效）维修性价比高；若动力总成严重老化、反复治理难达标，则评估置换/合规报废更经济，报废请走正规回收拆解渠道完成销户。</div></details>
+      <details class="faq"><summary>11. 国五车、国六车年检标准一样吗？</summary><div class="a">在用车排放检验（年检尾气）按<b>统一的在用国家标准（GB 18285-2018 / GB 3847-2018）</b>执行限值，与新车出厂执行的“国五/国六”型式认证标准不是同一体系。国六（尤其国六b）新车因自带 GPF、OBD 强化与 RDE 设计，实际达标余量更大；老标准车辆更依赖良好养护。行内建议：无论哪年款，年检前热车 + 正常保养，比临时找门路可靠。</div></details>
+      <details class="faq"><summary>12. 燃油添加剂对过尾气有用吗？</summary><div class="a">含 <b>PEA（聚醚胺）成分的正规燃油添加剂</b>对清除喷油嘴、燃烧室轻度积碳有帮助，可作养护辅助；但对<b>三元催化器中毒失效、氧传感器损坏等硬件问题无效</b>，也不能替代维修。建议按“先诊断 → 对症处理 → 必要时用添加剂辅助”的顺序，而非把希望全押在添加剂上。</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 参考 ============ -->
+<section id="ref">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">资料来源</span>
+      <h2>参考与声明</h2>
+    </div>
+    <div class="card reveal" style="padding:22px">
+      <ul class="refs">
+        <li>生态环境部：《中国移动源环境管理年报（2025年）》——2024 年全国移动源与机动车污染物排放统计（CO/HC/NOx/PM 及分燃料类型占比）。</li>
+        <li>生态环境部机动车排放标准相关发布与《城市机动车大气污染物和温室气体排放测算方法（交通量法）》编制说明——排放标准体系演进时间线（2000 国一至 2020 国六等口径）。</li>
+        <li>GB 18285-2018《汽油车污染物排放限值及测量方法（双怠速法及简易工况法）》；GB 3847-2018《柴油车污染物排放限值及测量方法（自由加速法及加载减速法）》。</li>
+        <li>生态环境部、交通运输部、国家市场监督管理总局：《关于建立实施汽车排放检验与维护制度的通知》（环大气〔2020〕31号）及各地（武汉、聊城、呼伦贝尔、六安、上海青浦等）I/M 制度实施细则公开文件。</li>
+        <li>《中华人民共和国大气污染防治法》（第五十五条、第六十条等）。</li>
+        <li>公安部交通管理局公开数据（全国机动车/汽车保有量）及公开行业报道（用于趋势判断，仅供参考）。</li>
+      </ul>
+      <div style="font-size:13px;color:var(--muted);margin-top:14px;background:#f9fcfa;border-radius:10px;padding:12px 14px">
+      ⚖️ <b>声明：</b>本页为公开资料的行业信息整理，供学习与参考，不构成任何检测/维修结果的承诺。污染物数据、标准限值及政策条款请以国家主管部门最新发布的正式文件为准；各地方执行细则（如超标幅度阈值、过渡期安排）可能存在差异，请以当地生态环境、交通运输部门公开信息为准。
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="org">长沙市卓鸿汽车服务有限公司 ｜ 汽车尾气治理 · 行业信息手册</div>
+    <div style="margin-top:6px">本页由我司依据公开资料整理维护，用于行业信息科普；内容不定期更新。</div>
+    <div class="disc">更新日期：2026 年 9 月 ｜ 数据与政策以官方最新发布为准 ｜ 图文整理：zhuohongqiche · vehicle-exhaust-info</div>
+  </div>
+</footer>
+
+<script>
+// FAQ 手风琴互斥
+document.querySelectorAll('.faq summary').forEach(function(s){
+  s.addEventListener('click',function(e){
+    var d=s.parentElement;
+    if(!d.open){document.querySelectorAll('.faq[open]').forEach(function(o){if(o!==d)o.removeAttribute('open');});}
+  });
+});
+// 滚动渐入
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+// 导航高亮
+var links=document.querySelectorAll('#nav a');var secs=[];
+links.forEach(function(a){var t=document.querySelector(a.getAttribute('href'));if(t)secs.push([a,t]);});
+var navio=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){secs.forEach(function(p){p[1]===x.target?p[0].classList.add('on'):p[0].classList.remove('on');});}});},{rootMargin:'-30% 0px -60% 0px'});
+secs.forEach(function(p){navio.observe(p[1]);});
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"尾气检测主要测什么？哪些车要测？","acceptedAnswer":{"@type":"Answer","text":"汽油车主要测CO与HC（大城市加载工况还测NOx）并做OBD检查；柴油车主要测排气烟度。适用对象是在用燃油车，纯电动车免于尾气检测。"}},
+    {"@type":"Question","name":"年检尾气不合格会怎样？","acceptedAnswer":{"@type":"Answer","text":"I站出具检验报告与超标排放汽车维护修理告知书，超标达到规定幅度的须到M站维修治理，凭维修记录回原I站复检；数据与该车VIN绑定并联网上传，换站无法规避。"}},
+    {"@type":"Question","name":"I站和M站什么区别？","acceptedAnswer":{"@type":"Answer","text":"I站是排放检验机构（检测站），只检不修；M站是经交通部门备案的维修治理企业，负责把超标车修到达标。I/M制度让检验与维修独立又数据闭环。"}},
+    {"@type":"Question","name":"为什么我的车尾气会超标？","acceptedAnswer":{"@type":"Answer","text":"高频原因：积碳与燃烧不充分（CO/HC升高）、三元催化器劣化（NOx升高）、氧传感器或火花塞老化导致空燃比失控。先看报告哪项超标再对症排查，多数通过清洗养护可解决。"}},
+    {"@type":"Question","name":"年检前自己能做什么？","acceptedAnswer":{"@type":"Answer","text":"热车让三元催化达到工作温度、使用正规油品、提前处理排放故障码并行驶完成系统就绪自检、提前做尾气预检。"}},
+    {"@type":"Question","name":"必须去指定的M站维修吗？","acceptedAnswer":{"@type":"Answer","text":"不必，车主可自主选择任一家备案M站，检测站不得强制指定。建议选择具备检测设备、能出具规范维修记录的站点。"}}
+  ]
+}
+</script>
+</body>
+</html>
