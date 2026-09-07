@@ -176,10 +176,17 @@ footer a{color:#5eead4}
       <p>信息窗口：近 7–10 天（截至 2026-09-07）。覆盖：政府一周政务 / 长沙本地 / 生态环境（禁烧＋尾气）/ 车险监管 / 交通保通保畅 / 交管公安动态。</p>
     </div>
 
+    <!-- ===== 每日简报正文区 · 自动化更新锚点 START =====
+         每日简报自动化任务将整段替换下方 <article class="issue reveal">...</article> 为“最新一期”全文：
+         1) 保留 .issue / .issue-head / .issue-body / .seg / .hl-box / .note 结构与现有样式类，勿改动；
+         2) 更新头部日期（.dt）为当期日期、flag 为第 N 期、nav 中锚点 href="#i-YYYY-MM-DD" 与下方 section id="i-YYYY-MM-DD" 一致；
+         3) 上一期完整卡片压缩为一行链接，追加进下方“往期简报”列表顶部，链接指向 news/YYYY-MM-DD-每日简报.md；
+         4) 同时更新首页 index.html 中“最新一期日期”锚点之间的日期。
+    ===== 每日简报正文区 · 自动化更新锚点 END 前置说明（勿删本注释块，正文从下一行 article 开始） ===== -->
     <article class="issue reveal">
       <div class="issue-head">
         <div class="dt">📋 每日简报 · 2026-09-07<small>信息窗口 近 7–10 天</small></div>
-        <span class="flag">首发</span>
+        <span class="flag">第 1 期</span>
       </div>
       <div class="issue-body">
 
@@ -245,6 +252,19 @@ footer a{color:#5eead4}
         <div class="note">⚖️ 声明：本页为公开信息的每日检索整理，仅供学习与经营参考；各条目以来源机构官网/公众号最新发布为准，如与官方口径不一致，以官方为准。</div>
       </div>
     </article>
+    <!-- ===== 每日简报正文区 · 自动化更新锚点 END ===== -->
+
+    <!-- ===== 往期简报列表 · 自动化更新锚点 START =====
+         自动化把“上一期”全文压缩为一行链接插入下方 ul 顶部，格式：
+         <li><a href="news/YYYY-MM-DD-每日简报.md">📄 YYYY-MM-DD（周X）· 主题一句话</a></li>
+         保留最近 12 期即可，样式沿用 .ls li。勿删本注释块。 ===== -->
+    <div class="card pad reveal" style="margin-top:6px">
+      <div style="font-weight:800;margin-bottom:10px">📁 往期简报</div>
+      <ul class="ls" id="past-list">
+        <li style="color:var(--muted);border-bottom:none">尚无往期 · 每日 07:30 自动更新，明日（2026-09-08）起归档于此；历史源档同步存于仓库 <b style="color:var(--muted)">news/</b> 目录</li>
+      </ul>
+    </div>
+    <!-- ===== 往期简报列表 · 自动化更新锚点 END ===== -->
 
     <div class="card pad reveal" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap">
       <div style="font-size:14px;color:var(--muted)">每日期刊自动归档于此，日期越新越靠前。<b style="color:var(--ink-2)">下一期：2026-09-08（周二）</b></div>
