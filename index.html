@@ -147,6 +147,15 @@ footer .org{color:#fff;font-weight:700}
 footer .disc{margin-top:10px;font-size:12.5px;color:#6f9a90;border-top:1px solid rgba(255,255,255,.1);padding-top:14px;margin-top:18px}
 footer a{color:#5eead4}
 
+/* 行业动态入口条 */
+.newsband{display:flex;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(160deg,#0a332d 0%,#0e4d44 55%,#115e54 100%);border-radius:20px;padding:26px 30px;color:#eaf6f3;box-shadow:var(--shadow-lg);transition:transform .2s ease,box-shadow .2s ease}
+.newsband .k{font-size:13px;font-weight:700;letter-spacing:2px;color:#5eead4}
+.newsband .t{font-size:clamp(16px,2.2vw,22px);font-weight:800;margin-top:4px}
+.newsband .s{font-size:13.5px;color:#9cc4ba;margin-top:4px}
+.newsband .go{flex:none;background:#fff;color:#0f766e;font-weight:800;font-size:14px;padding:10px 20px;border-radius:999px;transition:transform .2s ease}
+.newsband:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 22px 52px rgba(9,44,38,.2)}
+.newsband:hover .go{transform:translateX(4px)}
+
 /* reveal */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
@@ -168,6 +177,9 @@ footer a{color:#5eead4}
   .fnode{min-width:100%}
   .hero{padding:56px 0 46px}
 }
+@media(max-width:640px){
+  .newsband{flex-direction:column;align-items:flex-start}
+}
 @media(max-width:560px){
   .stats{grid-template-columns:1fr 1fr;gap:10px}
   .stat{padding:12px}
@@ -188,6 +200,7 @@ footer a{color:#5eead4}
       <span><i>◆</i>I/M 制度与 M 站闭环</span>
       <span><i>◆</i>超标原因与治理技术</span>
       <span><i>◆</i>行业趋势与 FAQ</span>
+      <span><i>◆</i><a href="news.html" style="color:#5eead4">每日行业动态 →</a></span>
     </div>
     <div class="stats">
       <div class="stat"><div class="num">1858.2<em>万吨</em></div><div class="lab">2024 年全国移动源污染物排放总量</div><div class="src">生态环境部年报（2025）</div></div>
@@ -209,6 +222,7 @@ footer a{color:#5eead4}
     <a href="#s6">行业趋势</a>
     <a href="#s7">常见问题</a>
     <a href="#ref">参考来源</a>
+    <a href="news.html">📰 行业动态</a>
   </div>
 </nav>
 
@@ -499,13 +513,25 @@ footer a{color:#5eead4}
     </div>
   </div>
 </section>
+
+<!-- ============ 行业动态入口 ============ -->
+<div class="wrap" style="margin-top:84px">
+  <a class="newsband reveal" href="news.html">
+    <div>
+      <div class="k">📰 每日行业动态 · 自动同步</div>
+      <div class="t">政务 / 交通保畅 / 生态环境（禁烧·尾气）/ 车险监管 / 长沙民生</div>
+      <div class="s">每天 07:30 按四类权威来源自动抓取更新，最新一期 2026-09-07 已上线</div>
+    </div>
+    <span class="go">查看简报 →</span>
+  </a>
+</div>
 </main>
 
 <footer>
   <div class="wrap">
     <div class="org">长沙市卓鸿汽车服务有限公司 ｜ 汽车尾气治理 · 行业信息手册</div>
     <div style="margin-top:6px">本页由我司依据公开资料整理维护，用于行业信息科普；内容不定期更新。</div>
-    <div class="disc">更新日期：2026 年 9 月 ｜ 数据与政策以官方最新发布为准 ｜ 图文整理：zhuohongqiche · vehicle-exhaust-info</div>
+    <div class="disc">更新日期：2026 年 9 月 ｜ 数据与政策以官方最新发布为准 ｜ <a href="news.html">📰 行业动态 · 每日简报</a> ｜ 图文整理：zhuohongqiche · vehicle-exhaust-info</div>
   </div>
 </footer>
 

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>行业动态 · 每日简报存档｜汽车尾气排放与治理 · 行业信息手册</title>
+<meta name="description" content="汽车尾气行业信息手册的行业动态板块：每天按中央级、长沙本地、主管部门、交管公安四类权威来源，自动抓取政府政务、交通保通保畅、生态环境（禁烧/尾气）、车险监管、本地民生五类主题，形成可追溯的每日简报存档。">
+<meta name="keywords" content="汽车尾气,行业动态,每日简报,生态环境,尾气排放,I/M制度,车险监管,长沙,湖南">
+<meta property="og:title" content="行业动态 · 每日简报存档">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://zhuohongqiche.github.io/vehicle-exhaust-info/news.html">
+<style>
+:root{
+  --ink:#0b1f1c;
+  --ink-2:#27423d;
+  --muted:#5d6f6b;
+  --bg:#f4f7f6;
+  --card:#ffffff;
+  --line:#dfe8e5;
+  --brand:#0f766e;
+  --brand-2:#0d9488;
+  --brand-soft:#e6f4f1;
+  --deep:#051e1b;
+  --deep-2:#0a332d;
+  --amber:#b45309;
+  --amber-soft:#fdf3e3;
+  --red:#c2410c;
+  --red-soft:#fdeee7;
+  --sky:#075985;
+  --sky-soft:#e8f1f8;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(9,44,38,.07);
+  --shadow-lg:0 18px 46px rgba(9,44,38,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Hero（简洁版） */
+.hero{background:radial-gradient(1000px 420px at 85% -10%,#0e4d44 0%,transparent 55%),linear-gradient(160deg,var(--deep) 0%,var(--deep-2) 100%);color:#eaf6f3;padding:56px 0 46px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(120,200,185,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(120,200,185,.06) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#bfe8e0;font-size:13px;padding:5px 14px;border-radius:999px;letter-spacing:.5px}
+.badge b{color:#fff}
+h1{font-size:clamp(24px,3.8vw,38px);line-height:1.25;margin:18px 0 12px;font-weight:800;letter-spacing:.5px}
+h1 .hl{color:#34d399}
+.hero p.lead{font-size:clamp(14px,1.5vw,16.5px);color:#bfd9d2;max-width:860px}
+.hero .meta{margin-top:20px;font-size:13px;color:#8fb6ad;display:flex;flex-wrap:wrap;gap:8px 18px}
+.hero .meta span{display:inline-flex;align-items:center;gap:6px}
+.hero .meta i{font-style:normal;color:#34d399}
+.hero .meta a{color:#5eead4}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:0;padding-bottom:0}
+.nav .wrap::-webkit-scrollbar{display:none}
+.nav .logo{font-weight:800;color:var(--brand);white-space:nowrap;margin-right:14px;font-size:15px}
+.nav a{color:var(--ink-2);font-size:14px;padding:13px 12px;white-space:nowrap;border-bottom:2px solid transparent;display:inline-block}
+.nav a:hover{text-decoration:none;color:var(--brand)}
+.nav a.on{color:var(--brand);border-bottom-color:var(--brand);font-weight:600}
+
+section{padding:56px 0 8px}
+.sec-head{margin-bottom:28px}
+.sec-head .kicker{display:inline-block;font-size:13px;font-weight:700;color:var(--brand);letter-spacing:2px;margin-bottom:8px}
+.sec-head h2{font-size:clamp(21px,2.8vw,30px);font-weight:800;line-height:1.3}
+.sec-head p{color:var(--muted);margin-top:8px;max-width:900px;font-size:15px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.card.pad{padding:22px 24px}
+
+/* 来源清单 chips */
+.src-group{margin-bottom:16px}
+.src-group .lab{font-size:13.5px;font-weight:800;color:var(--ink-2);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.src-group .lab i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:7px;background:var(--brand-soft);color:var(--brand);font-weight:800;font-size:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13px;color:var(--ink-2);background:#f2f7f5;border:1px solid var(--line);padding:4px 12px;border-radius:999px}
+
+/* 简报条目 */
+.issue{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow);margin-bottom:26px;overflow:hidden}
+.issue-head{background:linear-gradient(160deg,#0a332d 0%,#0e4d44 100%);color:#eaf6f3;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.issue-head .dt{font-weight:800;font-size:17px}
+.issue-head .dt small{font-weight:500;color:#9cc4ba;margin-left:8px;font-size:13px}
+.issue-head .flag{font-size:12px;color:#bfe8e0;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:4px 12px;border-radius:999px}
+.issue-body{padding:8px 24px 20px}
+.seg{margin-top:20px}
+.seg .h{font-size:15px;font-weight:800;color:var(--brand);display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.seg .h .no{flex:none;font-size:11px;background:var(--brand-soft);color:var(--brand);border-radius:6px;padding:1px 7px;letter-spacing:1px}
+ul.ls{list-style:none;margin-top:6px}
+ul.ls li{position:relative;padding:6px 0 6px 22px;color:var(--ink-2);font-size:14.5px;border-bottom:1px dashed #eef3f1}
+ul.ls li:last-child{border-bottom:none}
+ul.ls li::before{content:"";position:absolute;left:4px;top:15px;width:7px;height:7px;border-radius:2px;background:var(--brand-2);opacity:.55}
+ul.ls li b{color:var(--ink)}
+ul.ls li .s{color:var(--muted);font-size:12.5px;margin-left:6px}
+.hl-box{margin-top:18px;background:var(--amber-soft);border:1px solid #f3e2bd;border-left:4px solid var(--amber);border-radius:12px;padding:14px 18px}
+.hl-box .t{font-weight:800;color:var(--amber);font-size:14.5px;margin-bottom:4px}
+.hl-box li{color:#6b4a1d;font-size:14px;margin:4px 0 4px 18px}
+.note{font-size:12.5px;color:var(--muted);background:#f6faf9;border-radius:10px;padding:10px 14px;margin-top:14px;border:1px dashed var(--line)}
+
+footer{background:var(--deep);color:#a9c6bf;margin-top:64px;padding:40px 0 38px;font-size:13.5px}
+footer .org{color:#fff;font-weight:700}
+footer .disc{margin-top:10px;font-size:12.5px;color:#6f9a90;border-top:1px solid rgba(255,255,255,.1);padding-top:14px;margin-top:18px}
+footer a{color:#5eead4}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:640px){
+  .issue-body{padding:4px 16px 16px}
+  .hero{padding:40px 0 34px}
+  section{padding:40px 0 4px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">📋 行业信息手册 · 动态板块 <b>每日 07:30 更新</b></span>
+    <h1>行业动态 · <span class="hl">每日简报存档</span></h1>
+    <p class="lead">每天按“中央级、长沙本地、主管部门、交管公安”四类权威来源，定时抓取并归档五类主题信息：政府一周政务、交通保通保畅、生态环境（禁烧 / 尾气排放）、车险监管动态、本地民生新闻——每条注明来源机构与时间，可回溯查证。</p>
+    <div class="meta">
+      <span><i>◆</i>四类来源 · 每日抓取</span>
+      <span><i>◆</i>五类主题 · 缺一不可</span>
+      <span><i>◆</i>最新一期：2026-09-07</span>
+      <span><i>◆</i><a href="index.html">← 返回行业信息手册首页</a></span>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <span class="logo">📰 行业动态</span>
+    <a href="#src">来源与说明</a>
+    <a href="#i-2026-09-07" class="on">2026-09-07 简报</a>
+    <a href="index.html">← 返回手册首页</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ 来源与说明 ============ -->
+<section id="src">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">ABOUT · 覆盖范围</span>
+      <h2>抓什么、从哪抓、怎么用</h2>
+      <p>本板块与本手册配套的“每日简报自动化任务”联动：每天早上自动完成检索—整理—归档—同步。信息源中含公众号等无网页端渠道，故以“来源机构 + 主题”的时效检索方式覆盖，确保每个主题方向都有可查证的当周动态。</p>
+    </div>
+    <div class="card pad reveal">
+      <div class="src-group"><div class="lab"><i>①</i>中央级</div>
+        <div class="chips"><span class="chip">中国政府网</span><span class="chip">人民日报</span><span class="chip">新华社 / 新华网</span><span class="chip">人民网</span><span class="chip">中央政法委长安剑</span></div>
+      </div>
+      <div class="src-group"><div class="lab"><i>②</i>长沙本地</div>
+        <div class="chips"><span class="chip">长沙发布</span><span class="chip">长沙市政府门户网</span><span class="chip">长沙晚报</span><span class="chip">潇湘晨报</span><span class="chip">长沙观察</span><span class="chip">湖南交通频道</span><span class="chip">长沙政法频道</span><span class="chip">文明长沙</span><span class="chip">青年湖南</span></div>
+      </div>
+      <div class="src-group"><div class="lab"><i>③</i>主管部门（与业务直接相关）</div>
+        <div class="chips"><span class="chip">交通运输部</span><span class="chip">长沙生态环境（尾气排放）</span><span class="chip">湖南发改</span><span class="chip">湖南工信</span><span class="chip">工信微报</span><span class="chip">国家税务总局</span><span class="chip">国家金融监督管理总局</span><span class="chip">中国银行保险报</span></div>
+      </div>
+      <div class="src-group"><div class="lab"><i>④</i>交管公安类</div>
+        <div class="chips"><span class="chip">益阳公安交警</span><span class="chip">湘潭县公安交管</span><span class="chip">为民热线</span></div>
+      </div>
+      <div class="note">📌 每期简报底部附「与门店相关要点」，自动提炼与尾气治理 / I-M 闭环 / 年检代办 / 报废回收 / 以旧换新补贴 / 维修门店合规相关的提醒，供行业经营参考。所有条目均为公开信息检索整理，以官方最新发布为准；个别未能核实的条目标注「待核实」。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2026-09-07 第一期 ============ -->
+<section id="i-2026-09-07">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">ISSUE 001 · 首发</span>
+      <h2>2026-09-07（周一）每日简报</h2>
+      <p>信息窗口：近 7–10 天（截至 2026-09-07）。覆盖：政府一周政务 / 长沙本地 / 生态环境（禁烧＋尾气）/ 车险监管 / 交通保通保畅 / 交管公安动态。</p>
+    </div>
+
+    <article class="issue reveal">
+      <div class="issue-head">
+        <div class="dt">📋 每日简报 · 2026-09-07<small>信息窗口 近 7–10 天</small></div>
+        <span class="flag">首发</span>
+      </div>
+      <div class="issue-body">
+
+        <div class="seg"><div class="h"><span class="no">一</span>政府一周政务（中央）</div>
+          <ul class="ls">
+            <li><b>国常会（8/31）</b>：研究促进招商引资高质量发展——从“给政策”转向优化营商环境、培育产业生态；讨论并原则通过<b>《税收征收管理法（修订草案）》</b>（提请人大审议），审议通过《审计法实施条例（修订草案）》；部署城市地下管网建设。<span class="s">来源：中国政府网</span></li>
+            <li><b>国常会（8/21，补录）</b>：部署<b>持续改善空气质量</b>——深入打好蓝天保卫战、重点区域联防联控、推动优化产业结构/能源结构/交通运输结构。<span class="s">来源：中国政府网 · 与尾气治理行业长期政策面利好相关</span></li>
+            <li>李强签署国务院令：公布修订后《电力安全事故应急处置和调查处理条例》（2027-01-01 施行）。<span class="s">来源：中国政府网</span></li>
+            <li>六部门印发《关于推动历史经典产业高质量发展的意见》（工信微报发布）；工信部等 10 部门印发<b>《促进中小企业发展“十五五”规划》</b>。<span class="s">来源：工信微报</span></li>
+          </ul>
+        </div>
+
+        <div class="seg"><div class="h"><span class="no">二</span>长沙本地（民生 / 政务）</div>
+          <ul class="ls">
+            <li><b>民生实事</b>：省人社厅公开征集 <b>2027 年全省重点民生实事建议（至 10/15）</b>，涵盖交通出行、生态环境等 11 个领域，可在省政府官网提交。<span class="s">来源：长沙发布</span></li>
+            <li>长沙住建局：房屋安全“三项制度”全域推开，2026 年湘江新区及芙蓉/天心/开福/雨花/望城覆盖 <b>6.3 万栋重点房屋</b>“安全体检+保险”（雨花区在列）。<span class="s">来源：长沙晚报</span></li>
+            <li>雨花区第六都小区地下管网顶管改造，惠及 4000 余户——区里巡察整改典型。<span class="s">来源：长沙晚报</span></li>
+            <li>动态：长沙地铁 2 号线西延二期开大小交路运营；2 条新高速（南横高速、长吉高速长沙至安化段）招标启动；全市累计加装电梯 4000+ 部。<span class="s">来源：长沙发布 / 长沙观察</span></li>
+          </ul>
+        </div>
+
+        <div class="seg"><div class="h"><span class="no">三</span>生态环境（禁烧＋尾气——重点板块）</div>
+          <ul class="ls">
+            <li><b>湖南 9/4 全省秸秆综合利用与禁限烧管控部署会</b>（副省长刘扬）：正值中晚稻收割关键期，“疏堵结合、分区管控”“一县一策/一地一策”，严查违规焚烧。长沙等实行<b>全域禁烧</b>；2026 湖南耕地禁烧区占 83.2%。<span class="s">来源：湖南生态环境 / 湖南日报</span></li>
+            <li><b>《生态环境法典》8/15 施行</b>后秸秆焚烧入法：禁烧区露天焚烧秸秆可罚 <b>500–2000 元</b>（湖南规定拒不改正罚 500 元起，引火灾追治安/刑责）。<span class="s">来源：中国政府网 / 湖南生态环境</span></li>
+            <li><b>车检辟谣（央视 / 中国环境科学研究院）</b>：网传“OBD 检测史上最严、过不了”系谣言——燃油车 <b>OBD 上线合格率 90% 以上</b>；OBD 不合格<b>并未强制指定 M 站</b>，去 4S 店/正规修理厂修好消除故障码即可复检。监管部门近期严打的是<b>检测机构使用 OBD 作弊器</b>，不是加严标准。<span class="s">来源：央视新闻 / 中国环境科学研究院</span></li>
+            <li><b>I/M 闭环再确认</b>：尾气初检不合格后<b>同周期内不允许跨站复检</b>（系统锁车、联网记录），须 M 站维修→上传记录→回原 I 站复检。<span class="s">来源：多地生态环境/交通部门公开口径</span></li>
+          </ul>
+        </div>
+
+        <div class="seg"><div class="h"><span class="no">四</span>车险监管动态</div>
+          <ul class="ls">
+            <li>金监总局 8/21 印发<b>《非车险综合治理行动方案》</b>（延续“报行合一”严监管，存量产品分批重备案，2027 一季度前完成）。<span class="s">来源：国家金融监督管理总局</span></li>
+            <li>2026 上市财险半年报：车险“报行合一”显效，人保/太保/平安综合成本率 93.5%/94.6%/94.9%，<b>承保利润普遍改善</b>；人保车险承保利润 99.17 亿元（+13.6%）。<span class="s">来源：上市险企公告 / 中国银行保险报</span></li>
+            <li><b>新能源车险</b>：2025 全行业承保新能源车 4358 万辆（+40.1%），承保亏损收窄至 56 亿元；四部门《指导意见》落地，自主定价系数扩至 [0.5, 1.5]；北京启动智能网联新能源车险开发，深圳探索“车电分离”车险。<span class="s">来源：金监总局 / 中国银行保险报</span></li>
+          </ul>
+        </div>
+
+        <div class="seg"><div class="h"><span class="no">五</span>交通保通保畅</div>
+          <ul class="ls">
+            <li><b>交通运输部 9/4 部务会</b>：提前谋划<b>中秋国庆假期</b>安全生产与服务保障，组织农村客运安全风险隐患排查整治，严查超限超载、非法营运。<span class="s">来源：交通运输部</span></li>
+            <li>各地高速“路警企”陆续部署“双节”保畅（增设可变情报板、24 小时联动值守）——9 月底出行高峰前是车辆检测/保养需求窗口。<span class="s">来源：湖南交通频道 / 行业公开报道</span></li>
+          </ul>
+        </div>
+
+        <div class="seg"><div class="h"><span class="no">六</span>交管公安类（益阳 / 湘潭 / 湖南）</div>
+          <ul class="ls">
+            <li><b>益阳公安交警</b>：湖南省第十五届运动会开幕在即，严查酒驾醉驾、“摩电”违法、货车超载/闯禁；开学季校车安全检查+护学岗。<span class="s">来源：益阳公安交警</span></li>
+            <li>湘潭方向本周暂无新发布（多为县级公众号内容）；郴州临武第 7 次联合执法含<b>深入维修门店查非法改装、违规销售非标车、违法拆解报废</b>——门店合规提示：改装与报废资质红线常被联合执法点名。<span class="s">来源：郴州/临武公安交警 · 门店合规参考</span></li>
+          </ul>
+        </div>
+
+        <div class="hl-box">
+          <div class="t">⭐ 与门店相关要点（本期提炼）</div>
+          <ul>
+            <li><b>辟谣素材可跟进</b>：“OBD 过不了”是谣言 → 科普口径是“保养到位绝大多数能过”，可作为老车车主的信任内容（呼应“不吓唬、讲实话”的定位）。</li>
+            <li><b>双节前检测高峰</b>：9 月底中秋国庆前预计迎来年检小高峰，可提前备好预检服务承接。</li>
+            <li><b>以旧换新/报废利好</b>：湖南 2026 以旧换新细则——报废 2013 年前汽油车等购新能源最高补 2 万元；新能源车购置税 2026–2027 减半（≤1.5 万封顶）。会带动一波老旧车报废潮，正规报废销户业务可顺势承接。</li>
+            <li><b>湖南新能源汽车“揭榜挂帅”申报 9/8 截止</b>（湘工信装备〔2026〕211 号）——如有合作的企业客户可转告。</li>
+          </ul>
+        </div>
+
+        <div class="note">⚖️ 声明：本页为公开信息的每日检索整理，仅供学习与经营参考；各条目以来源机构官网/公众号最新发布为准，如与官方口径不一致，以官方为准。</div>
+      </div>
+    </article>
+
+    <div class="card pad reveal" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap">
+      <div style="font-size:14px;color:var(--muted)">每日期刊自动归档于此，日期越新越靠前。<b style="color:var(--ink-2)">下一期：2026-09-08（周二）</b></div>
+      <a href="index.html" style="font-weight:700">← 返回行业信息手册首页</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="org">长沙市卓鸿汽车服务有限公司 ｜ 汽车尾气治理 · 行业信息手册 · 行业动态</div>
+    <div style="margin-top:6px">本板块每日 07:30 按四类权威来源自动抓取更新，用于行业信息跟踪与经营参考。</div>
+    <div class="disc">首发：2026-09-07 ｜ 数据与政策以官方最新发布为准 ｜ <a href="index.html">返回首页</a> ｜ 图文整理：zhuohongqiche · vehicle-exhaust-info</div>
+  </div>
+</footer>
+
+<script>
+// 滚动渐入
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.06});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+// 导航高亮
+var links=document.querySelectorAll('#nav a');var secs=[];
+links.forEach(function(a){var t=document.querySelector(a.getAttribute('href'));if(t&&t.id)secs.push([a,t]);});
+var navio=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){secs.forEach(function(p){p[1]===x.target?p[0].classList.add('on'):p[0].classList.remove('on');});}});},{rootMargin:'-20% 0px -70% 0px'});
+secs.forEach(function(p){navio.observe(p[1]);});
+</script>
+</body>
+</html>
